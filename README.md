@@ -57,10 +57,26 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+  Node.js allows JS code to run outside of the browser. A developer extracted the JS engine from google chrome.
+	Node.js also comes with a package management tool called NPM. 
+	Express is an NPM module. Express comes with many features that allow developers to build the basics of a back-end (or, a REST api) very quickly. Express also allows the use of middleware.
+
 1. Understand and explain the use of Middleware.
+  Middleware functions are functions that run before an endpoint's callback function. They have access to the homies (req, res) and the next function that runs for the route(next). They are commonly used to validate request data and log request details.
 1. The basic principles of the REST architectural style.
+
+Everything is a Resource.
+	Each resource can be accessed with a unique URI.
+	Resources can have multiple representations.
+	Communication happens over a Stateless protocol.
+	Resource management happens via HTTP methods.
+
 1. Understand and explain the use of Express Routers.
+  Express routers allow developers to thin down server files and organize code based on the resource it purtains to. For example, /api/posts (for the post resource) could be in its own file due to express routers, while /api/users could have its own also.
+
 1. Describe tooling used to manually test the correctness of an API.
+  Jest can be used to test API's. Jest is a js testing framework that was built by Facebook. We have used this in the past to test API's for our frontend applications.
+	Supertest is another library that can be used to test API's. It allows developers to send HTTP requests through code and act on the results.
 
 ## Instructions
 
